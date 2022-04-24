@@ -64,8 +64,7 @@ void genData(std::string filename)
 
 int main()
 {
-  std::vector<unsigned int> values = {2, 3, 1};
-  NeuralNetwork n(values);
+  NeuralNetwork n({2, 3, 1});
   data in_dat, out_dat;
   genData("test");
   ReadCSV("test-in", in_dat);
